@@ -6,44 +6,61 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: #ffa500;
+    background-image: url(https://img.freepik.com/fotos-gratis/a-paisagem-bonita-do-sol-da-praia-com-um-barco_1112-212.jpg?w=2000);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100vw;
+    
 }
 
 .container{
     margin: 10rem auto;
     width: 40%;
     height: 30vh;
+    padding: 25px;
     text-align: center;
-    background-color: #ce8806;
+    background-color: #0000;
     box-shadow: 5px 5px 15px 5px #000000;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
 }
 
 .hora{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    filter: blur(0px);
+    border: rgb(59, 59, 59) 2px solid;
+
 }
 
-p{
-    margin-top: 1rem;
-    margin: 0.5rem;
-    color: white;
-    background-color: black;
+.hora{
+    margin: auto;
+    color: #fff;
+    background-color: #000;
     height: 4rem;
-    width: 3rem;
+    width: 10rem;
     padding: 0.5rem;
     border-radius: 5px;
     font-family: 'Barlow', sans-serif;
+
 }
 
-.diaSemana .data{
+.data{
     font-family: 'Barlow', sans-serif;
 
+}
+
+@media screen and (max-width: 900px){
+    .container{
+        height: 40vh;
+    }
 }
 
 @media screen and (max-width:425px){
     .container{
         width: 80%;
-        height: 50vh;
+        height: 40vh;
     }
 }
